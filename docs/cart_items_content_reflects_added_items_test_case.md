@@ -1,6 +1,6 @@
 **Test Case ID**: TC010
 **Title**: Cart Item's Content Reflects Added Items
-**Precondition**: The user is logged in and has been redirected to the inventory page ('./inventory.html')
+**Precondition**: The user is logged in and has been redirected to the inventory page './inventory.html'
 **Steps**:
 1. Click on 'Add to cart' button for item 'Sauce Labs Fleece Jacket'
 2. Click on 'Add to cart' button for item 'Sauce Labs Onesie'

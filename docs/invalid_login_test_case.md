@@ -4,7 +4,7 @@
 **Title**: Invalid Login
 **Precondition**: User has invalid credentials and is on the login page.
 **Steps**:
-1. Go to: https://www.saucedemo.com
+1. Go to: 'https://www.saucedemo.com'
 2. Enter username: "invalid-username"
 3. Enter password: "invalid-password"
 4. Click on the login button

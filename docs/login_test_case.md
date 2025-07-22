@@ -10,7 +10,7 @@
 4. Click the login button
 
 **Expected result**:
-User is redirected to the inventory page (./inventory.html)
+User is redirected to the inventory page './inventory.html'
 
 **Actual result**:
 User is successfully redirected to the inventory page.

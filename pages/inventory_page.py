@@ -45,3 +45,11 @@ class InventoryPage(BasePage):
     
     def open_cart_page(self):
         self.driver.find_element(By.CSS_SELECTOR, "a.shopping_cart_link").click()
+        
+    def open_burger_menu(self):
+        burger_menu = self.driver.find_element(By.ID, "react-burger-menu-btn")
+        burger_menu.click()
+        
+    def open_sorting_dropdown(self):
+        sorting_dropdown = self.driver.find_element(By.CLASS_NAME, "product_sort_container")
+        sorting_dropdown.click()

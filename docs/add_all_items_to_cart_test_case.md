@@ -1,6 +1,6 @@
 **Test Case ID**: TC007
 **Title**: Add All Items To Cart
-**Precondition**: The user is logged in and is on the inventory page (./inventory.html)
+**Precondition**: The user is logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on 'Add to cart' for item 'Sauce Labs Backpack'
 2. Click on 'Add to cart' for item 'Sauce Labs Bike Light'
