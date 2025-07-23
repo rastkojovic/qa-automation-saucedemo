@@ -1,5 +1,5 @@
 **Test Case ID**: TC015
-**Title**: Sort A to Z Test
+**Title**: Sort inventory items alphabetically
 **Preconditions**: User has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on the sorting dropdown menu

@@ -15,8 +15,8 @@ def test_sort_a_to_z(driver):
     sorting_dropdown = Select(driver.find_element(By.CLASS_NAME, "product_sort_container"))
     sorting_dropdown.select_by_visible_text("Name (A to Z)")
     
-    inventory_items = driver.find_elements(By.CLASS_NAME, "inventory_item_name")
-    inventory_item_names = [item.text for item in inventory_items]
+
+    inventory_item_names = inventory_page.get_inventory_item_names()
     sorted_inventory_item_names = sorted(inventory_item_names)
     
     assert inventory_item_names == sorted_inventory_item_names, f"Inventory items are not sorted alphabetically (a to z)"

@@ -11,3 +11,7 @@ class CartPage(BasePage):
     def get_cart_items(self):
         cart_items = self.driver.find_elements(By.CLASS_NAME, "inventory_item_name")
         return cart_items
+    
+    def checkout(self):
+        checkout_button = self.driver.find_element(By.ID, "checkout")
+        checkout_button.click()

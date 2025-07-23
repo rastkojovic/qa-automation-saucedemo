@@ -53,3 +53,13 @@ class InventoryPage(BasePage):
     def open_sorting_dropdown(self):
         sorting_dropdown = self.driver.find_element(By.CLASS_NAME, "product_sort_container")
         sorting_dropdown.click()
+        
+    def get_inventory_item_names(self):
+        inventory_item_elements = self.driver.find_elements(By.CLASS_NAME, "inventory_item_name")
+        inventory_item_names = [item.text for item in inventory_item_elements]
+        return inventory_item_names
+    
+    def get_inventory_item_prices(self):
+        inventory_item_price_elements = self.driver.find_elements(By.CLASS_NAME, "inventory_item_price")
+        inventory_item_prices = [float(item.text[1:]) for item in inventory_item_price_elements]
+        return inventory_item_prices
