@@ -46,6 +46,10 @@ class InventoryPage(BasePage):
     def open_cart_page(self):
         self.driver.find_element(By.CSS_SELECTOR, "a.shopping_cart_link").click()
         
+    def get_cart_badge_num(self):
+        cart_badge_element = self.driver.find_element(By.CSS_SELECTOR, "span.shopping_cart_badge")
+        return cart_badge_element.text
+        
     def open_burger_menu(self):
         burger_menu = self.driver.find_element(By.ID, "react-burger-menu-btn")
         burger_menu.click()
@@ -53,6 +57,10 @@ class InventoryPage(BasePage):
     def open_sorting_dropdown(self):
         sorting_dropdown = self.driver.find_element(By.CLASS_NAME, "product_sort_container")
         sorting_dropdown.click()
+        
+    def get_active_sorting_dropdown_option(self):
+        active_sort_option_element = self.driver.find_element(By.CSS_SELECTOR, "span.active_option")
+        return active_sort_option_element.text
         
     def get_inventory_item_names(self):
         inventory_item_elements = self.driver.find_elements(By.CLASS_NAME, "inventory_item_name")
@@ -63,3 +71,7 @@ class InventoryPage(BasePage):
         inventory_item_price_elements = self.driver.find_elements(By.CLASS_NAME, "inventory_item_price")
         inventory_item_prices = [float(item.text[1:]) for item in inventory_item_price_elements]
         return inventory_item_prices
+    
+    def open_social(self, social_name):
+        social_element = self.driver.find_element(By.CSS_SELECTOR, f"a[data-test='social-{social_name.lower()}']")
+        social_element.click()

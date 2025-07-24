@@ -60,18 +60,13 @@ qa-automation-saucedemo/
 │   ├── test_add_multiple_items_to_cart.py
 │   ├── test_add_single_item_to_cart.py
 │   ├── test_cart_icon_updates.py
-│   ├── test_inventory_page_loads.py
-│   ├── test_invalid_login.py
-│   ├── test_remove_item_from_cart.py
-│   └── test_valid_login.py
+│   ├── ...
 │
 └── docs/                         # Manual test cases
     ├── add_single_item_to_cart_test_case.md
     ├── cart_icon_updates_test_case.md
     ├── invalid_login_test_case.md
-    ├── inventory_loads_test_case.md
-    ├── login_test_case.md
-    └── remove_item_test_case.md
+    ├── ...
 ```
 
 ## License
