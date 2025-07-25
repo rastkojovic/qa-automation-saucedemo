@@ -1,9 +1,10 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
+from test_data import INVENTORY_PAGE_URL
 
 class InventoryPage(BasePage):
     
-    URL = "https://www.saucedemo.com/inventory.html"
+    URL = INVENTORY_PAGE_URL
     
     def __init__(self, driver):
         super().__init__(driver)

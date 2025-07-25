@@ -4,8 +4,8 @@
 **Steps**:
 1. Click on the burger menu icon
 
-**Expected result**: The burger menu has expanded and items are visible.
+**Expected result**: The burger menu has expanded and the items are visible.
 
-**Actual result**: The burger menu has expanded and items are visible.
+**Actual result**: The burger menu has expanded and the items are visible.
 
 **Result**: Pass

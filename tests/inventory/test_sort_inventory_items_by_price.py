@@ -4,6 +4,9 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 
 def test_sort_inventory_items_by_price(driver):
+    """
+    Test Case: TC017 - Sort Inventory Items By Price In Ascending Order
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

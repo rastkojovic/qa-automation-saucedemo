@@ -1,5 +1,5 @@
 **Test Case ID**: TC027
-**Title**: Click Facebook social
+**Title**: Click Facebook Socials Link
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on the Facebook icon in the page footer

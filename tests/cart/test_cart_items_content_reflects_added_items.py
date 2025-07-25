@@ -3,6 +3,9 @@ from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 
 def test_cart_items_content_reflects_added_items(driver):
+    """
+    Test Case: TC010 - Cart Item's Content Reflects Added Items
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

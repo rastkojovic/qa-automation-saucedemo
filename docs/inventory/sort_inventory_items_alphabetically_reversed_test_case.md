@@ -1,5 +1,5 @@
 **Test Case ID**: TC016
-**Title**: Sort inventory items alphabetically reversed
+**Title**: Sort Inventory Items In A Reverse Alphabetical Order
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on the sorting dropdown menu

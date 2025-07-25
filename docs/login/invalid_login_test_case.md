@@ -1,7 +1,7 @@
 **Test Case ID**: TC002
 **Test Type**: Functional
 **Priority**: High
-**Title**: Invalid Login
+**Title**: Login With Invalid Credentials
 **Precondition**: User has invalid credentials and is on the login page.
 **Steps**:
 1. Go to: 'https://www.saucedemo.com'

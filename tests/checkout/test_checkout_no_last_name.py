@@ -3,11 +3,12 @@ from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
+from test_data import FIRST_NAME, ERROR_LAST_NAME
 
-def test_checkout_only_first_name(driver):
-    
-    FIRST_NAME = "John"
-    EXPECTED_ERROR_MESSAGE = "Error: Last Name is required"
+def test_checkout_no_last_name(driver):
+    """
+    Test Case: TC023 - Checkout Without Providing The Last Name
+    """
     
     login_page = LoginPage(driver)
     login_page.open()
@@ -27,4 +28,4 @@ def test_checkout_only_first_name(driver):
     error_message_element = driver.find_element(By.CSS_SELECTOR, "h3[data-test='error']")
     error_message = error_message_element.text
     
-    assert error_message == EXPECTED_ERROR_MESSAGE, f"Expected error message '{EXPECTED_ERROR_MESSAGE}', but '{error_message}' is displayed"
+    assert error_message == ERROR_LAST_NAME, f"Expected error message '{ERROR_LAST_NAME}', but '{error_message}' is displayed"

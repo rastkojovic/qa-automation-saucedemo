@@ -1,9 +1,10 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
+from test_data import SAUCEDEMO_URL
 
 class LoginPage(BasePage):
     
-    URL = "https://www.saucedemo.com"
+    URL = SAUCEDEMO_URL
     
     def __init__(self, driver):
         super().__init__(driver)

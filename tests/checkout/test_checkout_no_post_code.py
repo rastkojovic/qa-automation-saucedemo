@@ -3,13 +3,13 @@ from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
+from test_data import FIRST_NAME, LAST_NAME, ERROR_POSTAL_CODE
 
 
 def test_checkout_no_post_code(driver):
-    
-    FIRST_NAME = "John"
-    LAST_NAME = "Doe"
-    EXPECTED_ERROR_MESSAGE = "Error: Postal Code is required"
+    """
+    Test Case: TC024 - Checkout Without Providing The Postal Code
+    """
     
     login_page = LoginPage(driver)
     login_page.open()
@@ -30,4 +30,4 @@ def test_checkout_no_post_code(driver):
     error_message_element = driver.find_element(By.CSS_SELECTOR, "h3[data-test='error']")
     error_message = error_message_element.text
     
-    assert error_message == EXPECTED_ERROR_MESSAGE, f"Expected error message '{EXPECTED_ERROR_MESSAGE}', but '{error_message}' is displayed"
+    assert error_message == ERROR_POSTAL_CODE, f"Expected error message '{ERROR_POSTAL_CODE}', but '{error_message}' is displayed"

@@ -1,11 +1,11 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.ui import WebDriverWait
+from test_data import LINKEDIN_PAGE_URL
 
 def test_click_linkedin_social(driver):
-    
-    LINKEDIN_PAGE_URL = "https://www.linkedin.com/company/sauce-labs/"
+    """
+    Test Case: TC028 - Click On The LinkedIn Socials Link
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

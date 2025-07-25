@@ -2,13 +2,12 @@ from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
+from test_data import FIRST_NAME, LAST_NAME, POSTAL_CODE, CHECKOUT_OVERVIEW_URL
 
 def test_checkout_reaches_overview_page(driver):
-    
-    FIRST_NAME = "John"
-    LAST_NAME = "Doe"
-    POST_CODE = "111111"
-    CHECKOUT_OVERVIEW_URL = "https://www.saucedemo.com/checkout-step-two.html"
+    """
+    Test Case: TC020 - Checkout Reaches The Overview Page
+    """
     
     login_page = LoginPage(driver)
     login_page.open()
@@ -24,7 +23,7 @@ def test_checkout_reaches_overview_page(driver):
     checkout_info_page = CheckoutInfoPage(driver)
     checkout_info_page.fill_first_name(FIRST_NAME)
     checkout_info_page.fill_last_name(LAST_NAME)
-    checkout_info_page.fill_postal_code(POST_CODE)
+    checkout_info_page.fill_postal_code(POSTAL_CODE)
     checkout_info_page.continue_checkout()
     
     current_url = driver.current_url

@@ -1,5 +1,5 @@
 **Test Case ID**: TC017
-**Title**: Sort Inventory Items By Price
+**Title**: Sort Inventory Items By Price In Ascending Order
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on the sorting dropdown menu

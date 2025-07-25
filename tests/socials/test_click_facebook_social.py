@@ -1,11 +1,11 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+from test_data import FACEBOOK_PAGE_LINK
 
 def test_click_facebook_social(driver):
-    
-    FACEBOOK_PAGE_LINK = "https://www.facebook.com/saucelabs"
+    """
+    Test Case: TC027 - Click Facebook Socials Link
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

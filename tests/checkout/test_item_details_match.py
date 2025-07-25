@@ -3,6 +3,9 @@ from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
 def test_item_details_match(driver):
+    """
+    Test Case: TC009 - Item Details Match
+    """
     
     item_page_url = "https://www.saucedemo.com/inventory-item.html?id=4"
     

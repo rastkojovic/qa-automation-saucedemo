@@ -5,6 +5,9 @@ from selenium.webdriver.common.by import By
 
 
 def test_sort_z_to_a(driver):
+    """
+    Test Case: TC016 - Sort Inventory Items In A Reverse Alphabetical Order
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

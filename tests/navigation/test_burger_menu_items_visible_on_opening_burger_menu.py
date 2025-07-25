@@ -5,6 +5,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
 def test_burger_menu(driver):
+    """
+    Test Case: TC012 - Burger Menu Items Visible On Opening Burger Menu
+    """
     login_page = LoginPage(driver)
     login_page.open()
     login_page.login_standard_user()

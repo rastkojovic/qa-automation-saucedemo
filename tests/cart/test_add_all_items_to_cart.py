@@ -2,6 +2,9 @@ from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
 def test_add_all_items_to_cart(driver):
+    """
+    Test Case: TC007 - Add All Items To Cart
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

@@ -1,5 +1,5 @@
 **Test Case ID**: TC018
-**Title**: Sort inventory items by price descending
+**Title**: Sort Inventory Items By Price In Descending Order
 **Precondition**: The user has logged in and is on the inventory page './inventory.html
 **Steps**:
 1. Click on the sorting dropdown menu

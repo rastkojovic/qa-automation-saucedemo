@@ -1,8 +1,8 @@
 **Test Case ID**: TC021
-**Title**: Checkout no info
-**Precondition**: The user has logged in, added item 'Sauce Labs Backpack' to cart, clicked on 'Checkout' button and is on the 'Checkout: Your Information' page './checkout-step-one.html'
+**Title**: Checkout Without Provoding Any Information
+**Precondition**: The user has logged in, added item 'Sauce Labs Backpack' to cart, clicked on the 'Checkout' button and is on the 'Checkout: Your Information' page './checkout-step-one.html'
 **Steps**:
-1. Click on 'Continue' button
+1. Click on the 'Continue' button
 
 **Expected result**: The error message 'Error: First Name is required' is displayed.
 

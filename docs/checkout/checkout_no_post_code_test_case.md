@@ -1,13 +1,13 @@
 **Test Case ID**: TC024
-**Title** Checkout no post code
-**Precondition**: The user has logged in, added item 'Sauce Labs Backpack' to cart, clicked on 'Checkout' button and is on the 'Checkout: Your Information' page './checkout-step-one.html'
+**Title** Checkout Without Providing The Postal Code
+**Precondition**: The user has logged in, added the item 'Sauce Labs Backpack' to the cart, clicked on the 'Checkout' button and is on the 'Checkout: Your Information' page './checkout-step-one.html'
 **Steps**:
-1. Enter first name "John" into first name field
-2. Enter last name "Doe" into last name field
-3. Click on 'Continue' button
+1. Enter first name "John" into the first name field
+2. Enter last name "Doe" into the last name field
+3. Click on the 'Continue' button
 
-**Expected result**: Error message 'Error: Postal Code is required' is displayed.
+**Expected result**: The error message 'Error: Postal Code is required' is displayed.
 
-**Actual result**: Error message 'Error: Postal Code is required' is displayed.
+**Actual result**: The error message 'Error: Postal Code is required' is displayed.
 
 **Result**: Pass

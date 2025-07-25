@@ -3,9 +3,13 @@ from pages.inventory_page import InventoryPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
+from test_data import SAUCEDEMO_URL
 
 
 def test_logout(driver):
+    """
+    Test Case: TC013 - Logout Test
+    """
     
     login_page = LoginPage(driver)
     login_page.open()
@@ -21,5 +25,5 @@ def test_logout(driver):
     logout_button = driver.find_element(By.CSS_SELECTOR, logout_btn_selector)
     logout_button.click()
     
-    url = driver.current_url
-    assert url == "https://www.saucedemo.com/", f"Current URL {url} does not match expected URL https://www.saucedemo.com/"
+    current_url = driver.current_url
+    assert current_url == SAUCEDEMO_URL, f"Current URL {current_url} does not match expected URL {SAUCEDEMO_URL}"

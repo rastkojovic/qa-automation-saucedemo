@@ -1,5 +1,5 @@
 **Test Case ID**: TC015
-**Title**: Sort inventory items alphabetically
+**Title**: Sort Inventory Items Alphabetically
 **Preconditions**: User has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click on the sorting dropdown menu

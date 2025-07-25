@@ -4,6 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 def test_sort_a_to_z(driver):
+    """
+    Test Case: TC015 - Sort Inventory Items Alphabetically
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

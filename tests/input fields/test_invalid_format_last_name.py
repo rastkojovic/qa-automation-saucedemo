@@ -2,12 +2,11 @@ from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
-from selenium.webdriver.common.by import By
-from test_data import ERROR_FIRST_NAME
+from test_data import FIRST_NAME, RANDOM_CHARACTERS, POSTAL_CODE, CHECKOUT_OVERVIEW_URL
 
-def test_checkout_no_info(driver):
+def test_invalid_format_last_name(driver):
     """
-    Test Case: TC021 - Checkout Without Provoding Any Information
+    Test Case: TC033 - Providing Data In An Invalid Format For The Last Name Field
     """
     
     login_page = LoginPage(driver)
@@ -22,9 +21,11 @@ def test_checkout_no_info(driver):
     cart_page.checkout()
     
     checkout_info_page = CheckoutInfoPage(driver)
+    checkout_info_page.fill_first_name(FIRST_NAME)
+    checkout_info_page.fill_last_name(RANDOM_CHARACTERS)
+    checkout_info_page.fill_postal_code(POSTAL_CODE)
     checkout_info_page.continue_checkout()
     
-    error_message_element = driver.find_element(By.CSS_SELECTOR, "h3[data-test='error']")
-    error_message = error_message_element.text
+    current_url = driver.current_url
     
-    assert error_message == ERROR_FIRST_NAME, f"Expected error message '{ERROR_FIRST_NAME}', but '{error_message}' is displayed"
+    assert current_url == CHECKOUT_OVERVIEW_URL, f"Expected URL: {CHECKOUT_OVERVIEW_URL}, actual URL: {current_url}"

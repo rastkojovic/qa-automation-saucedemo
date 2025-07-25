@@ -1,10 +1,12 @@
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from selenium.webdriver.common.by import By
+from test_data import CHECKOUT_PAGE_URL
 
 def test_start_checkout(driver):
-    
-    CHECKOUT_PAGE_URL = "https://www.saucedemo.com/checkout-step-one.html"
+    """
+    Test Case: TC019 - Start Checkout Process
+    """
     
     login_page = LoginPage(driver)
     login_page.open()

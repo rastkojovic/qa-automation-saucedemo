@@ -5,6 +5,9 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 
 def test_reset_app_state_button(driver):
+    """
+    Test Case: n/a
+    """
     
     login_page = LoginPage(driver)
     login_page.open()
