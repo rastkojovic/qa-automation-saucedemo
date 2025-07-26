@@ -1,18 +1,13 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
 from test_data import ERROR_FIRST_NAME
 
-def test_checkout_no_info(driver):
+def test_checkout_no_info(driver, login_standard_user):
     """
     Test Case: TC021 - Checkout Without Provoding Any Information
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart("Sauce Labs Backpack")

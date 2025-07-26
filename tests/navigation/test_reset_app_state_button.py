@@ -1,40 +1,46 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
+from test_data import ITEMS_ALPHA_ASC_VALUE
 
-def test_reset_app_state_button(driver):
+def test_reset_app_state_button(driver, login_standard_user):
     """
-    Test Case: n/a
+    Test Case: TC036 - Reset App State
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
-    inventory_page.open_burger_menu()
     
-    # TODO: You need to change the app state first!!!
+    # Change app state
     
     inventory_page.add_to_cart('Sauce Labs Backpack')
     inventory_page.add_to_cart('Sauce Labs Bike Light')
     inventory_page.add_to_cart('Sauce Labs Onesie')
     
-    # TODO: Add methods for sorting by every critera
-    inventory_page.open_sorting_dropdown()
+    inventory_page.sort_alphabetically_descending()
     
-    reset_app_state_button_locator = (By.ID, "reset_sidebar_link")
+    inventory_page.open_burger_menu()
     
-    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(reset_app_state_button_locator))
+    WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located((By.ID, "reset_sidebar_link")))
     
-    reset_app_state_button = driver.find_element(reset_app_state_button_locator)
+    # Reset app state
+    
+    reset_app_state_button = driver.find_element(By.ID, "reset_sidebar_link")
     reset_app_state_button.click()
     
-    # TODO: If cart is empty this element will not be found!!
-    cart_badge_num = inventory_page.get_cart_badge_num()
     active_sorting_option = inventory_page.get_active_sorting_dropdown_option()
+    cart_badge_num = inventory_page.get_cart_badge_num()
+    
+    # Check cart buttons state
+    no_items_added = True
+    button_elements = driver.find_elements(By.CLASS_NAME, "btn_inventory")
+    for button in button_elements:
+        if button.text == "Remove":
+            no_items_added = False
+
+    assert active_sorting_option == ITEMS_ALPHA_ASC_VALUE, f"Expected items to be sorted '{ITEMS_ALPHA_ASC_VALUE}' but got {active_sorting_option}"
+    assert cart_badge_num == 0, f"Expected cart badge num to be 0, got {cart_badge_num}"
+    assert no_items_added, f"Expected all inventory item buttons to be 'Add to cart'"
     
     
     

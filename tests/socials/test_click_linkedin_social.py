@@ -1,15 +1,10 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from test_data import LINKEDIN_PAGE_URL
 
-def test_click_linkedin_social(driver):
+def test_click_linkedin_social(driver, login_standard_user):
     """
     Test Case: TC028 - Click On The LinkedIn Socials Link
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.open_social("linkedin")

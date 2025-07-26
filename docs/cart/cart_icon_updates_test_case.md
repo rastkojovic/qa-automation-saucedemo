@@ -1,7 +1,9 @@
 **Test Case ID**: TC006
-**Test Type**: Functional
 **Title**: Cart Icon Updates
+**Type**: Functional, UI/UX
+**Severity**: Major
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
+
 **Steps**:
 1. Click on the 'Add to cart' button for the item 'Sauce Labs Backpack'
 2. Click on the 'Add to cart' button for the item 'Sauce Labs Bike Light'

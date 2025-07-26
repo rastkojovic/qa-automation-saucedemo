@@ -1,13 +1,9 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
-def test_add_single_item_to_cart(driver):
+def test_add_single_item_to_cart(driver, login_standard_user):
     """
     Test Case: TC004 - Add Single Item To Cart
     """
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart("Sauce Labs Backpack")

@@ -1,7 +1,9 @@
 **Test Case ID**: TC030
 **Title**: Checkout Empty Cart
 **Type** Negative
+**Severity**: Major
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
+
 **Steps**:
 1. Click on the cart button
 2. Click on the 'Checkout' button on the cart page './cart.html'

@@ -1,15 +1,10 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from test_data import FACEBOOK_PAGE_LINK
 
-def test_click_facebook_social(driver):
+def test_click_facebook_social(driver, login_standard_user):
     """
     Test Case: TC027 - Click Facebook Socials Link
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.open_social("facebook")

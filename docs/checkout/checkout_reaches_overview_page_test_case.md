@@ -1,6 +1,9 @@
 **Test Case ID**: TC020
 **Title**: Checkout Reaches The Overview Page
+**Type**: Functional
+**Severity**: Critical
 **Precondition**: The user has logged in, added the item 'Sauce Labs Onesie' to cart, clicked on the cart button and has been redirected to the cart page './cart.html'
+
 **Steps**:
 1. Click on the 'Checkout' button
 2. Enter first name into the 'first name' field

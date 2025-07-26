@@ -1,8 +1,9 @@
 **Test Case ID**: TC003
 **Test Type**: Functional
-**Priority**: High
+**Severity**: Critical
 **Title**: Inventory Page Loads After Login
 **Precondition**: User is on the login page and has valid credentials
+
 **Steps**:
 1. Go to https://www.saucedemo.com
 2. Enter username: "standard_user"

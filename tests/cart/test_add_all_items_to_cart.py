@@ -1,14 +1,9 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 
-def test_add_all_items_to_cart(driver):
+def test_add_all_items_to_cart(driver, login_standard_user):
     """
     Test Case: TC007 - Add All Items To Cart
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     item_names = [
         "Sauce Labs Backpack",

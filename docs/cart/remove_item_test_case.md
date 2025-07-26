@@ -1,5 +1,7 @@
 **Test Case ID**: TC005
 **Title**: Remove Item From Cart
+**Type**: Functional
+**Severity**: Critical
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
 **Steps**:
 1. Click the 'Add to cart' button for the item 'Sauce Labs Backpack'

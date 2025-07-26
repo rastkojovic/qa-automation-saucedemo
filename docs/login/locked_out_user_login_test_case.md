@@ -1,6 +1,9 @@
 **Test Case ID**: TC011
 **Title**: Login With The Credentials For The 'Locked Out User'
+**Type**: Negative
+**Severity**: Major
 **Precondition**: The user is on the login page 'https://www.saucedemo.com/'
+
 **Steps**:
 1. Enter username 'locked_out_user'
 2. Enter password 'secret_sauce'

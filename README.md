@@ -20,14 +20,14 @@ This project serves as a portfolio and practice project for developing real-worl
 
 ### 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/rastkojovic/qa-automation-saucedemo.git
 cd qa-automation-saucedemo
 ```
 
 ### 2. Set up a virtual environment and install dependencies
 
-```bash
+```
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ### 3. Run the tests
 
-```bash
+```
 pytest tests/
 ```
 
@@ -44,7 +44,7 @@ pytest tests/
 ```
 qa-automation-saucedemo/
 │
-├── conftest.py                   # PyTest fixture for driver setup
+├── conftest.py                   # PyTest fixtures 
 ├── requirements.txt              # Dependencies
 ├── README.md
 │
@@ -54,8 +54,9 @@ qa-automation-saucedemo/
 ├── pages/                        # Page Object Model classes
 │   ├── base_page.py
 │   ├── inventory_page.py
-│   └── login_page.py
-│
+│   ├── login_page.py
+│   ├── checkout_info_page.py
+│   └── cart_page.py
 ├── tests/                        # Test files
 │   ├── test_add_multiple_items_to_cart.py
 │   ├── test_add_single_item_to_cart.py
@@ -68,6 +69,27 @@ qa-automation-saucedemo/
     ├── invalid_login_test_case.md
     ├── ...
 ```
+
+## Sample Test Report
+
+Below is an example of the automatically generated HTML test report.
+![Example report](./example_report.png)
+
+To generate a report after running tests, use:
+
+```
+pytest --html=report.html --self-contained-html
+```
+
+## Features Covered
+
+- Login & Authentication: (valid/invalid/locked-out, logout)
+- Cart Functionality: (add, remove, badge updates, cart content accuracy)
+- Checkout Process: (complete flow, field validation, edge/negative scenarios)
+- Inventory Page: (load, sorting by name/price)
+- Input Field Validation: (invalid/missing data)
+- Navigation: (burger menu, about, reset app state)
+- Social Media Links: (Facebook, Twitter/X, LinkedIn)
 
 ## License
 

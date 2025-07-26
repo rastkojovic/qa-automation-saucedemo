@@ -14,8 +14,14 @@ INVALID_USERNAME = "invalid-username"
 INVALID_PASSWORD = "invalid-password"
 RANDOM_CHARACTERS = "12345!@#$%^&*"
 
+# Sorting
+ITEMS_ALPHA_ASC_VALUE = "Name (A to Z)"
+ITEMS_ALPHA_DESC_VALUE = "Name (Z to A)"
+ITEMS_NUM_ASC_VALUE = "Price (low to high)"
+ITEMS_NUM_DESC_VALUE = "Price (high to low)"
+
 # SauceDemo URLs
-SAUCEDEMO_URL = "https://www.saucedemo.com"
+SAUCEDEMO_URL = "https://www.saucedemo.com/"
 SAUCELABS_URL = "https://saucelabs.com/"
 INVENTORY_PAGE_URL = "https://www.saucedemo.com/inventory.html"
 CART_PAGE_URL = "https://www.saucedemo.com/cart.html"

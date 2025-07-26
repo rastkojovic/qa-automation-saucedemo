@@ -1,6 +1,9 @@
 **Test Case ID**: TC029
 **Title**: Click On The Twitter Socials Link
+**Type**: Functional
+**Severity**: Minor
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
+
 **Steps**:
 1. Click on the Twitter icon in the page footer
 

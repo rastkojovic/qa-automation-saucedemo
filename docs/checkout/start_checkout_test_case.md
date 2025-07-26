@@ -1,6 +1,9 @@
 **Test Case ID**: TC019
 **Title**: Start Checkout Process
+**Type**: Functional, Smoke
+**Severity**: Critical
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
+
 **Steps**:
 1. Click on the 'Add to cart' button for the item 'Sauce Labs Onesie'
 2. Click on the shopping cart button

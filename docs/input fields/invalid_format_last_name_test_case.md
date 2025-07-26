@@ -1,6 +1,9 @@
 **Test Case ID**: TC033
 **Title**: Providing Data In An Invalid Format For The Last Name Field
+**Type**: Negative
+**Severity**: Major
 **Precondition**: The user has logged in, added the item 'Sauce Labs Backpack' to the cart and is on the checkout information page './checkout-step-one.html'
+
 **Steps**:
 1. Enter 'John' into the first name field
 2. Enter '12345!@#$%^&*' into the last name field

@@ -1,15 +1,10 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage 
 from pages.cart_page import CartPage
 
-def test_cart_items_content_reflects_added_items(driver):
+def test_cart_items_content_reflects_added_items(driver, login_standard_user):
     """
     Test Case: TC010 - Cart Item's Content Reflects Added Items
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     

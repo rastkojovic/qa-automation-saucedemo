@@ -1,8 +1,9 @@
 **Test Case ID**: TC004
-**Test Type**: Functional
-**Priority**: High
 **Title**: Add Single Item To Cart
+**Type**: Functional
+**Severity**: Critical
 **Precondition**: User has logged in and is on the inventory page './inventory.html'.
+
 **Steps**:
 1. Click on the 'Add to cart' button for the item 'Sauce Labs Backpack'
 

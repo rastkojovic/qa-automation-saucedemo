@@ -1,18 +1,13 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
 from test_data import FIRST_NAME, LAST_NAME, POSTAL_CODE, CHECKOUT_COMPLETE_URL
 
-def test_complete_purchase(driver):
+def test_complete_purchase(driver, login_standard_user):
     """
     Test Case: TC026 - Complete Purchase Flow
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart('Sauce Labs Backpack')

@@ -1,7 +1,9 @@
 **Test Case ID**: TC031
 **Title**: Add And Then Remove Items From Cart And Proceed To Checkout
-**Type**: Negative
+**Type** Negative
+**Severity**: Major
 **Precondition**: The user has logged in and is on the inventory page './inventory.html'
+
 **Steps**:
 1. Click on the 'Add to cart' button for the item 'Sauce Labs Backpack'
 2. Click on the 'Add to cart' button for the item 'Sauce Labs Bike Light'

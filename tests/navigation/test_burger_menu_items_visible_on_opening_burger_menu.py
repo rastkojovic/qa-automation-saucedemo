@@ -1,16 +1,12 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 
-def test_burger_menu(driver):
+def test_burger_menu(driver, login_standard_user):
     """
     Test Case: TC012 - Burger Menu Items Visible On Opening Burger Menu
     """
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.open_burger_menu()

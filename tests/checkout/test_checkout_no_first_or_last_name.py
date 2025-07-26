@@ -1,18 +1,13 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
 from test_data import POSTAL_CODE, ERROR_FIRST_NAME
 
-def test_checkout_no_first_or_last_name(driver):
+def test_checkout_no_first_or_last_name(driver, login_standard_user):
     """
     Test Case: TC025 - Checkout Without Providing First Or Last Name
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart('Sauce Labs Backpack')

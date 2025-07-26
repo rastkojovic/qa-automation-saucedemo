@@ -1,17 +1,12 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from test_data import FIRST_NAME, RANDOM_CHARACTERS, POSTAL_CODE, CHECKOUT_OVERVIEW_URL
 
-def test_invalid_format_last_name(driver):
+def test_invalid_format_last_name(driver, login_standard_user):
     """
     Test Case: TC033 - Providing Data In An Invalid Format For The Last Name Field
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart("Sauce Labs Backpack")

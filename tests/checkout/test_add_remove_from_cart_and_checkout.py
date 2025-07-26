@@ -1,18 +1,13 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
 from pages.checkout_info_page import CheckoutInfoPage
 from selenium.webdriver.common.by import By
 from test_data import FIRST_NAME, LAST_NAME, POSTAL_CODE, CHECKOUT_COMPLETE_URL
 
-def test_add_remove_from_cart_and_checkout(driver):
+def test_add_remove_from_cart_and_checkout(driver, login_standard_user):
     """
     Test Case: TC031 - Add And Then Remove Items From Cart And Proceed To Checkout
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.add_to_cart("Sauce Labs Backpack")

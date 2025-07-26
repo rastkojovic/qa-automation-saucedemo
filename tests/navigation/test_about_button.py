@@ -1,18 +1,13 @@
-from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-from test_data import SAUCEDEMO_URL
+from test_data import SAUCELABS_URL
 
-def test_about_button(driver):
+def test_about_button(driver, login_standard_user):
     """
     Test Case: TC014 - About Button Test
     """
-    
-    login_page = LoginPage(driver)
-    login_page.open()
-    login_page.login_standard_user()
     
     inventory_page = InventoryPage(driver)
     inventory_page.open_burger_menu()
@@ -23,4 +18,4 @@ def test_about_button(driver):
     about_button.click()
     
     url = driver.current_url
-    assert url == SAUCEDEMO_URL, "Expected URL does not match current URL '{url}'"
+    assert url == SAUCELABS_URL, "Expected URL does not match current URL '{url}'"

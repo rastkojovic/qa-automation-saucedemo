@@ -1,8 +1,9 @@
 **Test Case ID**: TC001
 **Test Type**: Functional
-**Priority**: High
+**Severity**: Critical
 **Title**: Login Using Valid Credentials For The 'Standard User'
 **Precondition**: User has valid credentials and is on the login page
+
 **Steps**:
 1. Go to https://www.saucedemo.com
 2. Enter username: "standard_user"
