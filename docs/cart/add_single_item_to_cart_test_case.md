@@ -11,4 +11,4 @@
 
 **Actual result**: The item is successfully added to the cart and the shopping cart badge is displaying '1'
 
-**Result**: Pass
+**Status**: Pass

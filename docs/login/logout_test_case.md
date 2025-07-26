@@ -12,6 +12,6 @@
 
 **Actual result**: The user has been logged out and redirected to https://www.saucedemo.com/
 
-**Result**: Pass
+**Status**: Pass
 
 # Note: Treating Locked out user as a banned user in a real-world scenario

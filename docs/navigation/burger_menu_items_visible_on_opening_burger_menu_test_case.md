@@ -11,4 +11,4 @@
 
 **Actual result**: The burger menu has expanded and the items are visible.
 
-**Result**: Pass
+**Status**: Pass

@@ -13,4 +13,4 @@
 
 **Actual result**: The error message 'Error: Last Name is required' is displayed.
 
-**Result**: Pass
+**Status**: Pass

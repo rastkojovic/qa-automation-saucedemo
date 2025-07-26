@@ -23,6 +23,6 @@
 
 **Actual result**: The user is allowed to complete the checkout and is redirected to 'https://www.saucedemo.com/checkout-complete.html'
 
-**Result**: Pass (Test passes because it documents the application's current behaviour but this may be a product issue)
+**Status**: Pass (Test passes because it documents the application's current behaviour but this may be a product issue)
 
 **Note**: This test documents that the application currently allows checkout with an empty cart which may be an unexpected or undesired behaviour. In a real-world scenario, this would be reported as a defect.

@@ -12,4 +12,4 @@
 
 **Actual result**: The items are sorted in reverse alphabetical order
 
-**Result**: Pass
+**Status**: Pass

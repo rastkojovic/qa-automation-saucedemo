@@ -15,4 +15,4 @@
 
 **Actual result**: User is redirected to ./inventory.html and the list of products is visible
 
-**Result**: Pass
+**Status**: Pass

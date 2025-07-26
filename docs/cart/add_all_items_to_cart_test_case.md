@@ -16,4 +16,4 @@
 
 **Actual result**: All six items are successfully added to the cart
 
-**Result**: Pass
+**Status**: Pass

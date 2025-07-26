@@ -12,4 +12,4 @@
 
 **Actual result**: Inventory items are sorted by price in descending order
 
-**Result**: Pass
+**Status**: Pass

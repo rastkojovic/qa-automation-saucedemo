@@ -13,4 +13,4 @@
 
 **Actual result**: Final cart badge displays '1', corresponding to the remaining item 'Sauce Labs Bike Light'
 
-**Result**: Pass
+**Status**: Pass

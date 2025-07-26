@@ -11,4 +11,4 @@
 
 **Actual result**: The item 'Sauce Labs Backpack' has been removed and is not in the cart
 
-**Result**: Pass
+**Status**: Pass

@@ -13,4 +13,4 @@
 
 **Actual result**: Three items are added to cart. Shopping cart badge displays '3'.
 
-**Result**: Pass
+**Status**: Pass

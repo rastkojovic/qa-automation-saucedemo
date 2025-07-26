@@ -11,4 +11,4 @@
 
 **Actual result**: The user is redirected to 'https://www.facebook.com/saucelabs'
 
-**Result**: Pass
+**Status**: Pass

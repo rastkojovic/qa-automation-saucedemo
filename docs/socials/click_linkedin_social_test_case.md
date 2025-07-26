@@ -11,4 +11,4 @@
 
 **Actual result**: The user is redirected to 'https://www.linkedin.com/company/sauce-labs/'
 
-**Result**: Pass
+**Status**: Pass

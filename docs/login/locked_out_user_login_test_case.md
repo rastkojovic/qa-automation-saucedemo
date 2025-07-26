@@ -13,4 +13,4 @@
 
 **Actual result**: User recieves the error message 'Epic sadface: Sorry, this user has been locked out.' and is unable to log in.
 
-**Result**: Pass
+**Status**: Pass

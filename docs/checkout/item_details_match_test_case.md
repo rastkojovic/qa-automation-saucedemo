@@ -11,4 +11,4 @@
 
 **Actual result**: User is redirected to the 'Sauce Labs Backpack' items product page '/inventory-item.html?id=4'
 
-**Result**: Pass
+**Status**: Pass

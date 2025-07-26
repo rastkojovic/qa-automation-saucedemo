@@ -15,4 +15,4 @@
 
 **Actual result**: The user is redirected to './cart.html' and the items in the cart match the items added by the user
 
-**Result**: Pass
+**Status**: Pass

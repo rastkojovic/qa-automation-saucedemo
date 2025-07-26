@@ -11,4 +11,4 @@
 **Expected result**: Inventory items are sorted alphabetically from A to Z
 **Actual result**: Inventory items are sorted alphabetically from A to Z
 
-**Result**: Pass
+**Status**: Pass

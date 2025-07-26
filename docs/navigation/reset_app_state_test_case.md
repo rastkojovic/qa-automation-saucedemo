@@ -17,6 +17,6 @@
 
 **Actual result**: The cart badge is not being displayed. All the buttons have not reverted to 'Add to cart' buttons. The sorting has not reverted to it's default option 'Name (A to Z)'
 
-**Result**: Fail
+**Status**: Fail
 
 **Note**: This functionality exist only for demonstration purposes on SauceDemo and would not be included in a production retail application. Therefore severity is marked as N/A

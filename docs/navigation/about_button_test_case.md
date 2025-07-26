@@ -12,4 +12,4 @@
 
 **Actual result**: The user is redirected to SauceLabs page 'https://saucelabs.com/'
 
-**Result**: Pass
+**Status**: Pass

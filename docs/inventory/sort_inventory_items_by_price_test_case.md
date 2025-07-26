@@ -12,4 +12,4 @@
 
 **Actual result**: The items are sorted by price in ascending order
 
-**Result**: Pass
+**Status**: Pass

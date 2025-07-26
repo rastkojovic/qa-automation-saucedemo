@@ -13,4 +13,4 @@
 
 **Actual result**: The error message 'Error: Postal Code is required' is displayed.
 
-**Result**: Pass
+**Status**: Pass

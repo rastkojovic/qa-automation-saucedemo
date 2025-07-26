@@ -11,4 +11,4 @@
 
 **Actual result**: The user is redirected to 'https://x.com/saucelabs'
 
-**Result**: Pass
+**Status**: Pass

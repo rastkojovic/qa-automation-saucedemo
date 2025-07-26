@@ -15,4 +15,4 @@
 
 **Actual result**: The user is redirected to the Checkout Overview page './checkout-step-two.html'
 
-**Result**: Pass
+**Status**: Pass
